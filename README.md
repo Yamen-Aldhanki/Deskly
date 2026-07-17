@@ -57,7 +57,3 @@ Since Deskly is a fully static app, it deploys anywhere that serves static files
 
 - **GitHub Pages** — push the contents of `dist/` to your repo and enable Pages in Settings → Pages.
 - **Any static host** — Netlify, Vercel, Cloudflare Pages, or even a local file server.
-
-## License
-
-Add your preferred license here (e.g., MIT).
