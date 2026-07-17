@@ -1,51 +1,63 @@
 # Deskly
 
-Deskly is your personal digital desk for tasks, notes, projects, and more, fully offline.
+**Your personal digital desk.**
 
-It is a clean, distraction-free digital workspace designed to keep your productivity close to home. With no cloud sync, no tracking, and no internet required, everything you create stays securely on your local machine.
+Notes, tasks, projects, and utilities in one focused workspace — fully offline, no account, no sync, just work.
 
----
+Deskly is a productivity workspace that runs entirely in your browser. There's no backend, no API calls, and no tracking — every task, note, project, and file you create stays on your own device, stored locally via IndexedDB. Close the tab, come back next week, and it's all still there.
 
-## Core Features
+## Features
 
-Task Management
-Organize your daily to-dos and track your progress without the clutter.
+- **Dashboard** — an at-a-glance view of your day: pending tasks, active projects, notes, and focus time.
+- **Tasks** — priorities, due dates, categories, and progress tracking.
+- **Notes** — quick capture with pinning and favorites.
+- **Projects** — track progress, notes, and time per project.
+- **Planner & Calendar** — schedule events and link them to tasks.
+- **Files** — store and organize files locally, no upload required.
+- **Focus** — pomodoro/timer sessions to track deep work.
+- **Analytics** — a full productivity dashboard: completion trends, focus habits, streaks, personal bests, a GitHub-style activity heatmap, custom goals, and a daily productivity score — all computed locally from your own data.
+- **Drafts** — compose email drafts locally; "Send" hands them off to your default mail app via `mailto:` (Deskly itself never sends anything or talks to a server).
+- **Global search** (`Cmd/Ctrl+K`) — jump to any page, task, note, project, or draft instantly.
+- **Backup & restore** — export your entire workspace to a single JSON file and restore it anytime, including on a different device.
+- **Light & dark themes**, with a customizable accent color.
 
-Rich Note-Taking
-Jot down ideas, draft thoughts, and keep your documentation organized.
+## Privacy
 
-Project Workspace
-Manage larger goals and break them down into actionable steps.
+Deskly has no backend. There are no API calls, no accounts, no analytics services, and no network requests of any kind once the page has loaded — it even works with your network fully disconnected. All data is stored locally in your browser via IndexedDB and never leaves your device unless you explicitly export a backup.
 
-Privacy First
-Your data belongs to you. There are no external servers and no forced accounts, ensuring pure local performance.
+## Tech Stack
 
----
+- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/) for building
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+- [Dexie.js](https://dexie.org/) (IndexedDB) for local, offline-first storage
+- [Recharts](https://recharts.org/) for the Analytics charts
+- [Radix UI](https://www.radix-ui.com/) primitives
+
+All fonts are embedded locally at build time — no external font requests, ever.
 
 ## Getting Started
 
-### Prerequisites
-List any prerequisites here, such as Node.js, Docker, or specific browser requirements.
+```bash
+# Install dependencies
+npm install
 
-### Installation
+# Run the dev server
+npm run dev
 
-1. Clone the repository:
-   git clone https://github.com/your-username/deskly.git
+# Build for production
+npm run build
+```
 
-2. Navigate into the directory:
-   cd deskly
+The production build outputs to `dist/` — a fully static site with no server-side requirements.
 
-3. Install dependencies and start the app:
-   npm install
-   npm run dev
+## Deployment
 
----
+Since Deskly is a fully static app, it deploys anywhere that serves static files:
 
-## Built With
-List your tech stack here, such as HTML, CSS, JavaScript, React, or Electron.
+- **GitHub Pages** — push the contents of `dist/` to your repo and enable Pages in Settings → Pages.
+- **Any static host** — Netlify, Vercel, Cloudflare Pages, or even a local file server.
 
----
+## License
 
-## Privacy and Security
-
-Deskly is built with local-first principles. It does not make external API calls, collect analytics, or store data in the cloud. All configuration files and workspace data are saved strictly on your local storage.
+Add your preferred license here (e.g., MIT).
