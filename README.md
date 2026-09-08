@@ -1,59 +1,86 @@
-# Deskly
+# Deskly 2.0
 
-**Your personal digital desk.**
+A local-first productivity workspace for managing tasks, notes, projects, planning, files, and focus sessions — all in one place.
 
-Notes, tasks, projects, and utilities in one focused workspace — fully offline, no account, no sync, just work.
+**No account required. No cloud. Your data stays on your device.**
 
-Deskly is a productivity workspace that runs entirely in your browser. There's no backend, no API calls, and no tracking — every task, note, project, and file you create stays on your own device, stored locally via IndexedDB. Close the tab, come back next week, and it's all still there.
+**Live App:**  
+https://yamen-aldhanki.github.io/Deskly/
 
-## Features
+# Why Local-First?
 
-- **Dashboard** — an at-a-glance view of your day: pending tasks, active projects, notes, and focus time.
-- **Tasks** — priorities, due dates, categories, and progress tracking.
-- **Notes** — quick capture with pinning and favorites.
-- **Projects** — track progress, notes, and time per project.
-- **Planner & Calendar** — schedule events and link them to tasks.
-- **Files** — store and organize files locally, no upload required.
-- **Focus** — pomodoro/timer sessions to track deep work.
-- **Analytics** — a full productivity dashboard: completion trends, focus habits, streaks, personal bests, a GitHub-style activity heatmap, custom goals, and a daily productivity score — all computed locally from your own data.
-- **Drafts** — compose email drafts locally; "Send" hands them off to your default mail app via `mailto:` (Deskly itself never sends anything or talks to a server).
-- **Global search** (`Cmd/Ctrl+K`) — jump to any page, task, note, project, or draft instantly.
-- **Backup & restore** — export your entire workspace to a single JSON file and restore it anytime, including on a different device.
-- **Light & dark themes**, with a customizable accent color.
+Deskly runs entirely in your browser and stores your workspace locally using IndexedDB.
 
-## Privacy
+There is no server, no sign-in, and no automatic cloud synchronization. Your data stays on your device unless you choose to move it.
 
-Deskly has no backend. There are no API calls, no accounts, no analytics services, and no network requests of any kind once the page has loaded — it even works with your network fully disconnected. All data is stored locally in your browser via IndexedDB and never leaves your device unless you explicitly export a backup.
+Need to use Deskly on another device? Use **Export Backup** to download your workspace as a single `.json` file, then use **Import Backup** on the other device to restore it.
 
-## Tech Stack
+Backups can include your tasks, notes, projects, folders, files, focus history, goals, drafts, and other workspace data.
 
-- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/) for building
-- [Tailwind CSS](https://tailwindcss.com/) for styling
-- [Dexie.js](https://dexie.org/) (IndexedDB) for local, offline-first storage
-- [Recharts](https://recharts.org/) for the Analytics charts
-- [Radix UI](https://www.radix-ui.com/) primitives
+# Features
 
-All fonts are embedded locally at build time — no external font requests, ever.
+### Tasks
+Create and manage tasks with priorities, due dates, and completion tracking.
 
-## Getting Started
+### Notes & Drafts
+Keep quick notes and longer drafts organized inside your workspace.
 
-```bash
-# Install dependencies
-npm install
+### Projects
+Organize larger pieces of work with project tracking, folders, deadlines, and progress.
 
-# Run the dev server
-npm run dev
+### Planner & Calendar
+Plan upcoming work and keep track of tasks and events visually.
 
-# Build for production
-npm run build
-```
+### Files
+Upload, organize, open, and manage files locally with folder support.
 
-The production build outputs to `dist/` — a fully static site with no server-side requirements.
+### Focus
+More than a basic Pomodoro timer.
 
-## Deployment
+Create named focus sessions, choose a total duration, and break the session into individual Pomodoros with their own names and descriptions.
 
-Since Deskly is a fully static app, it deploys anywhere that serves static files:
+Deskly tracks your progress while you work, including time remaining and what's coming next.
 
-- **GitHub Pages** — push the contents of `dist/` to your repo and enable Pages in Settings → Pages.
-- **Any static host** — Netlify, Vercel, Cloudflare Pages, or even a local file server.
+After completing a session, you can reflect on:
+
+- What went well
+- What didn't go well
+- Mistakes you made
+- What you accomplished
+- What you want to change next time
+- Recommendations for future sessions
+
+Your completed sessions and reflections are saved to your local session history.
+
+### Goals
+Create and track personal or project-related goals.
+
+### Backup, Import & Reset
+You remain in control of your workspace.
+
+Export your Deskly data as a backup, restore it later with Import Backup, or completely reset your local workspace when needed.
+
+# Screenshots
+
+
+
+# Getting Started
+
+You can use Deskly directly from the live version:
+
+https://yamen-aldhanki.github.io/Deskly/
+
+Or clone the repository and open `index.html` directly in your browser.
+
+There is **no build step, installation, account, or server required.**
+
+# Data & Privacy
+
+Deskly stores its data locally in your browser using **IndexedDB**.
+
+Nothing is transmitted to a Deskly server because there is no Deskly backend or cloud database.
+
+Your workspace belongs to you and remains on your device.
+
+> **Important:** Clearing your browser's site data can permanently remove your Deskly workspace. Export a backup regularly if the data is important to you.<img width="1451" height="906" alt="Screenshot 2026-09-08 at 6 40 05 PM" src="https://github.com/user-attachments/assets/c48efb9c-f884-475a-83c2-a5e645c9887a" />
+
