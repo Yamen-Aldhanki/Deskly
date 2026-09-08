@@ -80,10 +80,10 @@ Your workspace belongs to you and remains on your device.
 
 > **Important:** Clearing your browser's site data can permanently remove your Deskly workspace. Export a backup regularly if the data is important to you.<img width="1451" height="906" alt="Screenshot 2026-09-08 at 6 40 05 PM" src="https://github.com/user-attachments/assets/c48efb9c-f884-475a-83c2-a5e645c9887a" />
 
-# Previous Version
+## Old Version
 
-Want to check out the older version of Deskly?
+`Deskly_old_version.html` is kept in this repo for reference only. It's an earlier
+build of the app, before some fixes and changes were made.
 
-
-
-This version is kept for archival purposes and shows how Deskly looked and worked before Deskly 2.0.
+It is **not** the live version. The current app is `index.html`, hosted at:
+https://yamen-aldhanki.github.io/Deskly/
