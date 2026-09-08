@@ -60,10 +60,6 @@ You remain in control of your workspace.
 
 Export your Deskly data as a backup, restore it later with Import Backup, or completely reset your local workspace when needed.
 
-# Screenshots
-
-
-
 # Getting Started
 
 You can use Deskly directly from the live version:
